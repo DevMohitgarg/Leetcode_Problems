@@ -3,13 +3,15 @@ public:
     bool isPalindrome(int x) {
         if(x<0)
         return 0;
-        int rem,ans=0,num=x;
+        long ans=0;
+        int rem,num=x;
+
 
         while(num!=0)
         {
             rem = num%10;
             num /=10;
-            if(ans>INT_MAX/10)
+            if(ans>INT_MAX)
             return 0;
             ans = ans*10 + rem;
             
