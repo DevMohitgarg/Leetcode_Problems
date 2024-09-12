@@ -5,7 +5,7 @@ public:
         return 0;
         int rem,ans=0,num=x;
 
-        while(num)
+        while(num!=0)
         {
             rem = num%10;
             num /=10;
