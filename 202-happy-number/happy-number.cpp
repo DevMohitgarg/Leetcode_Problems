@@ -14,20 +14,18 @@ public:
 }
 
     bool isHappy(int n) {
-         
-
     while(n >= 10)
     {
         n = isHappyChecker(n);
     }    
-if(n==1 || n==7)
+    if(n==1 || n==7)
     {
         return true;
     }
-    if(n == 1)
-    {
-        return true;
-    }
+    // if(n == 1)
+    // {
+    //     return true;
+    // }
     return false;
     }
 };
